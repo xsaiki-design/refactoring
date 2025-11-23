@@ -4,8 +4,6 @@ import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Map;
 
-import static theater.Constants.*;
-
 /**
  * This class generates a statement for a given invoice of performances.
  */
@@ -57,7 +55,7 @@ public class StatementPrinter {
     }
 
     private static String usd(int amountInCents) {
-        return NumberFormat.getCurrencyInstance(Locale.US).format(amountInCents / PERCENT_FACTOR);
+        return NumberFormat.getCurrencyInstance(Locale.US).format(amountInCents / Constants.PERCENT_FACTOR);
     }
 
     private int getVolumeCredits(Performance performance) {
@@ -80,11 +78,11 @@ public class StatementPrinter {
         int rslt = 0;
         switch (getPlay(performance).getType()) {
             case "tragedy":
-                rslt = TRAGEDY_BASE_AMOUNT;
-                if (performance.getAudience() > TRAGEDY_AUDIENCE_THRESHOLD) {
-                    rslt += TRAGEDY_OVER_BASE_CAPACITY_PER_PERSON
+                rslt = Constants.TRAGEDY_BASE_AMOUNT;
+                if (performance.getAudience() > Constants.TRAGEDY_AUDIENCE_THRESHOLD) {
+                    rslt += Constants.TRAGEDY_OVER_BASE_CAPACITY_PER_PERSON
                             * (performance.getAudience()
-                            - TRAGEDY_AUDIENCE_THRESHOLD);
+                            - Constants.TRAGEDY_AUDIENCE_THRESHOLD);
                 }
                 break;
             case "comedy":
