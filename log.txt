@@ -48,20 +48,10 @@ a0124c9 fixing starter file
 c8d9d38 adding starter files
 :
 
-56be7ab (HEAD -> main) Task 2.4
-d3fe1fd (origin/main, origin/HEAD) Task 2.3
-e828313 Task 2.4
+ef817f8 (HEAD -> main) Task 2.4
+56be7ab (origin/main, origin/HEAD) Task 2.4
+d3fe1fd Task 2.3
 e828313 Task 2.2
 0f48847 Task 2.1
 e0d996f Task 2.1
 c10ffa9 Task 2.1
-d0254db Task 1.2
-02f980e Task 1.1
-ca86c3c Testing I can Push
-2b4f164 fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
-ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
-b545fe2 clarifying extracted method names in README.md
-a0124c9 fixing starter file
-c8d9d38 adding starter files
-cbe4517 first commit
-PS C:\Users\xande\OneDrive\IdeaProjects\RefacFolder>
